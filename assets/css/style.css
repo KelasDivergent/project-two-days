@@ -1,0 +1,243 @@
+/* Scroll Behavior untuk mengscroll suatu website menjadi smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+/* membuat suatu elemen warna */
+:root {
+    --colorfirst: rgb(22, 184, 49);
+    --colorseccond: rgb(35, 228, 35);
+    --primary: rgb(102, 105, 245);
+    --background: whitesmoke;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #127f16;
+
+}
+
+.bg-waves {
+    position: absolute;
+    margin-top: -250px;
+}
+
+/* btn-custom */
+.btn-custom {
+    background-color: var(--colorseccond);
+    width: 50%;
+    height: 50%;
+}
+
+.rounded-15 {
+    border-radius: 15px;
+}
+
+/* untuk navbar start */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.nav-item a {
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.navbar .collapse a:hover {
+    color: var(--colorseccond);
+    display: inline-block;
+}
+
+.navbar .collapse a::after {
+    content: "";
+    display: block;
+    border-bottom: 0.1rem solid var(--colorfirst);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .collapse a:hover::after {
+    transform: scaleX(0.8);
+}
+
+/* untuk navbar end */
+
+/* header start */
+.header {
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    background-image: url("/assets/img/gunung-slamet-terbaru.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    background: linear-gradient(0deg,
+            rgb(87, 104, 77) 1%,
+            rgba(255, 255, 255, 4%) 60%);
+}
+
+.header h1 {
+    color: var(--colorseccond);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 56px;
+    font-weight: 800;
+    margin-top: 100px;
+}
+
+.header h1 span {
+    color: var(--background);
+}
+
+.header a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    width: 60%;
+}
+
+.header img {
+    opacity: 90%;
+}
+
+/* header end */
+
+/* About Start */
+.about,
+.location {
+    margin: 100px 0 100px;
+}
+
+.about h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    margin-top: -100px;
+    position: relative;
+    margin-bottom: -100px;
+}
+
+.location h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+.about p,
+.location p {
+    color: var(--background);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-style: oblique;
+}
+
+.location .maps {
+    width: 550px;
+    height: 400px;
+}
+
+/* About End */
+
+/* Profile Start */
+.profile {
+    margin: 100px 0 100px;
+}
+
+/* Profile End */
+
+/* content start */
+.content {
+    margin: 100px 0 100px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+.content p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-style: oblique;
+}
+
+.content .seni {
+    height: 400px;
+}
+
+/* content end */
+
+.obyek {
+    margin: 100px 0 100px;
+}
+
+.obyek h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+.obyek a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 30px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        color: black;
+
+    }
+
+    .header h1 span {
+        color: black;
+
+    }
+
+    .header .img-fluid {
+        width: 300px;
+        margin-left: 35px;
+        margin-top: 50px;
+    }
+
+    .header {
+        opacity: 0.8;
+        min-height: 90vh;
+    }
+
+    .about h1 {
+        font-size: 30px;
+    }
+
+    .about .satu {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .location .satu {
+        font-size: 18px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .bg-waves {
+        position: absolute;
+        margin-top: -83px;
+    }
+}
