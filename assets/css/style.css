@@ -73,7 +73,7 @@ body {
     min-height: 110vh;
     display: flex;
     align-items: center;
-    background-image: url("/assets/img/gunung-slamet-terbaru.jpg");
+    background-image: url("../img/gunung-slamet-terbaru.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -237,7 +237,7 @@ body {
     }
 
     .bg-waves {
-        position: absolute;
-        margin-top: -83px;
+            position: absolute;
+    margin-top: -83px;
     }
 }
